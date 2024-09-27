@@ -1,5 +1,6 @@
 package com.luv2code.cruddemo;
 
+import java.util.logging.Logger;
 import com.luv2code.cruddemo.dao.StudentDAO;
 import com.luv2code.cruddemo.entity.Student;
 import org.springframework.boot.CommandLineRunner;
@@ -26,9 +27,10 @@ public class CruddemoApplication {
 	}
 
 	private void createMultipleStudents(StudentDAO studentDAO) {
+                Logger logger = Logger.getLogger(getClass().getName());
 
 		// create multiple students
-		System.out.println("Creating 3 student objects ...");
+		logger.info("Creating 3 student objects ...");
 		Student tempStudent1 = new Student("John", "Doe", "john@luv2code.com");
 		Student tempStudent2 = new Student("Mary", "Public", "mary@luv2code.com");
 		Student tempStudent3 = new Student("Bonita", "Applebum", "bonita@luv2code.com");
