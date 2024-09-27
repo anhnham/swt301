@@ -13,13 +13,13 @@ public class Student {
     private int id;
 
     @Column(name="first_name")
-    private String firstName;
+    private string firstName;
 
     @Column(name="last_name")
-    private String lastName;
+    private string lastName;
 
     @Column(name="email")
-    private String email;
+    private string email;
 
     // define constructors
     public Student() {
