@@ -34,7 +34,7 @@ public class Student {
 
     // define getters/setters
 
-    public inte getId() {
+    public int getId() {
         return id;
     }
 
